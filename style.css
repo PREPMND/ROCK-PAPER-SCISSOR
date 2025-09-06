@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body ,htmk{
+    height: 100%;
+    width: 100%;
+
+}
+.main{
+    display: flex;
+    align-items: center;
+    height: 450px;
+}
+.rock, .paper , .scissor{
+
+    text-align: center;
+}
+.result{
+    text-align: center;
+    font-size: 35px;
+    color: black;
+    
+}
