@@ -1,4 +1,5 @@
 // your code goes here
+// your code goes here
 let rock=document.querySelector(".rock");
 let paper=document.querySelector(".paper");
 let scissor=document.querySelector(".sci");
@@ -8,21 +9,12 @@ function getComputerChoice() {
         else if (comp <= 66) return "paper";
         else return "scissor";
 }
-let compD=getComputerChoice();
-if (comp<=33){
-    compD="rock";
-}
-else if (comp>33 && comp<=66){
-    compD="paper";
-}
-else if (comp>66 && comp<=99){
-    compD="scissors";
-}
 
 let our;
 
 function disp(){
     let win;
+    let compD=getComputerChoice();
     if(our==="rock" && compD==="paper"){
         win="Computer";
     }
@@ -58,6 +50,9 @@ paper.addEventListener("click",function(){
     our="paper";
     disp();
 });
+
+
+    
 
 
     
