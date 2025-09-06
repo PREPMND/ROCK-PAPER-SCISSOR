@@ -2,8 +2,13 @@
 let rock=document.querySelector(".rock");
 let paper=document.querySelector(".paper");
 let scissor=document.querySelector(".sci");
-const comp=Math.floor(Math.random()*100);
-let compD;
+function getComputerChoice() {
+        const comp = Math.floor(Math.random() * 100);
+        if (comp <= 33) return "rock";
+        else if (comp <= 66) return "paper";
+        else return "scissor";
+}
+let compD=getComputerChoice();
 if (comp<=33){
     compD="rock";
 }
