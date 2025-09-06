@@ -5,7 +5,6 @@
 body ,htmk{
     height: 100%;
     width: 100%;
-
 }
 .main{
     display: flex;
@@ -13,12 +12,14 @@ body ,htmk{
     height: 450px;
 }
 .rock, .paper , .scissor{
-
     text-align: center;
 }
 .result{
     text-align: center;
-    font-size: 35px;
-    color: black;
-    
+    font-size: 35px;  
+    background:linear-gradient(to right,blue,red);
+    background-clip:text;
+    -webkit-background-clip:text;
+    font-family:system-ui, -apple-system, "Segoe UI";
+    color: transparent;    
 }
